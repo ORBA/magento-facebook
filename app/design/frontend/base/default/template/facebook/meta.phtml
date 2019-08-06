@@ -1,0 +1,10 @@
+<?php if ($image = $this->getImage()): ?>
+<meta property="og:image" content="<?php echo $image; ?>" />
+<?php endif; ?>
+<?php if ($app_id = $this->getAppId()): ?>
+<meta property="fb:app_id" content="<?php echo $app_id; ?>" />
+<?php endif; ?>
+<meta property="og:locale" content="<?php echo Mage::helper('facebook')->getLocale(); ?>" />
+<meta property="og:url" content="<?php echo Mage::helper('core/url')->getCurrentUrl(); ?>" />
+<meta property="og:title" content="<?php echo $this->getLayout()->getBlock('head')->getTitle(); ?>" />
+<meta property="og:type" content="website" />

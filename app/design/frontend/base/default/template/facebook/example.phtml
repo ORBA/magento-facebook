@@ -1,0 +1,22 @@
+<div class="block block-facebook-example">
+    <div class="block-title">
+        <strong><?php echo Mage::helper('facebook')->__('ORBA Facebook Example Page'); ?></strong>
+    </div>
+    <div class="block-content">
+        <?php if ($link = Mage::helper('facebook')->connectLink('Login with FB!')): ?>
+        <div class="empty">
+            <?php echo $link; ?>
+        </div>
+        <?php endif; ?>
+        <?php if ($url = Mage::helper('facebook')->connectLink(false, true)): ?>
+        <div class="empty">
+            <a href="<?php echo $url; ?>" class="own-connect-link"><span><?php echo Mage::helper('facebook')->__('Connect me!'); ?></span></a>
+        </div>
+        <?php endif; ?>
+        <?php if ($like = Mage::helper('facebook')->likeButton(array('send' => true, 'show-faces' => true))): ?>
+        <div class="empty">
+            <?php echo $like; ?>
+        </div>
+        <?php endif; ?>
+    </div>
+</div>

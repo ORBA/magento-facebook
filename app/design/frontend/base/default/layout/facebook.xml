@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <reference name="head">
+            <block type="facebook/meta" name="facebook_meta" />
+        </reference>
+        <reference name="after_body_start">
+            <block type="facebook/init" name="facebook_init" />
+        </reference>
+    </default>
+    <customer_account_logoutsuccess>
+        <remove name="facebook_connect" />
+        <remove name="facebook_init" />
+    </customer_account_logoutsuccess>
+    <facebook_example_index>
+        <reference name="content">
+            <block type="core/template" name="facebook_example_content" template="facebook/example.phtml" />
+        </reference>
+    </facebook_example_index>
+    <cms_index_index>
+        <reference name="left">
+            <block type="facebook/like" name="facebook_like_left" before="-" template="facebook/like.phtml">
+                <action method="setType"><type>home</type></action>
+            </block>
+        </reference>
+        <reference name="right">
+            <block type="facebook/like" name="facebook_like_right" before="-" template="facebook/like.phtml">
+                <action method="setType"><type>home</type></action>
+            </block>
+        </reference>
+        <reference name="content">
+            <block type="facebook/like" name="facebook_like_content" before="-" template="facebook/like.phtml">
+                <action method="setType"><type>home</type></action>
+            </block>
+        </reference>
+    </cms_index_index>
+    <catalog_category_view>
+        <reference name="left">
+            <block type="facebook/like" name="facebook_like_left" before="-" template="facebook/like.phtml">
+                <action method="setType"><type>category</type></action>
+            </block>
+        </reference>
+        <reference name="right">
+            <block type="facebook/like" name="facebook_like_right" before="-" template="facebook/like.phtml">
+                <action method="setType"><type>category</type></action>
+            </block>
+        </reference>
+        <reference name="content">
+            <block type="facebook/like" name="facebook_like_content" before="-" template="facebook/like.phtml">
+                <action method="setType"><type>category</type></action>
+            </block>
+        </reference>
+    </catalog_category_view>
+    <catalog_product_view>
+        <reference name="left">
+            <block type="facebook/like" name="facebook_like_left" before="-" template="facebook/like.phtml">
+                <action method="setType"><type>product</type></action>
+            </block>
+        </reference>
+        <reference name="right">
+            <block type="facebook/like" name="facebook_like_right" before="-" template="facebook/like.phtml">
+                <action method="setType"><type>product</type></action>
+            </block>
+        </reference>
+        <reference name="content">
+            <block type="facebook/like" name="facebook_like_content" before="-" template="facebook/like.phtml">
+                <action method="setType"><type>product</type></action>
+            </block>
+        </reference>
+    </catalog_product_view>
+</layout>

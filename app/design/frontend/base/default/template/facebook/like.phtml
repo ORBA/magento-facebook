@@ -1,0 +1,16 @@
+<?php if ($this->isVisible()): ?>
+<?php $title = $this->getTitle(); ?>
+<?php $opts = $this->getOpts(); ?>
+<div class="block block-facebook-like">
+    <?php if ($title): ?>
+    <div class="block-title">
+        <strong><?php echo $title; ?></strong>
+    </div>
+    <?php endif; ?>
+    <div class="block-content">
+        <div class="empty">
+            <?php echo Mage::helper('facebook')->likeButton($opts, $this->getDefaultUrl()); ?>
+        </div>
+    </div>
+</div>
+<?php endif; ?>

@@ -1,0 +1,7 @@
+app/code/community/Orba/Facebook/                           app/code/community/Orba/Facebook/ 
+app/design/frontend/base/default/template/facebook/         app/design/frontend/base/default/template/facebook/
+app/design/frontend/base/default/layout/facebook.xml        app/design/frontend/base/default/layout/facebook.xml
+app/etc/modules/Orba_Facebook.xml                           app/etc/modules/Orba_Facebook.xml
+app/locale/en_US/Orba_Facebook.csv                          app/locale/en_US/Orba_Facebook.csv
+app/locale/pl_PL/Orba_Facebook.csv                          app/locale/pl_PL/Orba_Facebook.csv
+lib/Facebook/                                               lib/Facebook/
