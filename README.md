@@ -1,3 +1,5 @@
+This project is ABANDONNED
+
 # Orba Magento 1 Facebook Module
 
 Facebook integration for Magento 1
